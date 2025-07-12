@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0044d985fbf8b929ebd22947651cfa49",
+    "content-hash": "1fa6858e11800cce9d6aa58300be5081",
     "packages": [
         {
             "name": "brick/math",
@@ -3341,11 +3341,17 @@
         },
         {
             "name": "stacktrace/ui",
-            "version": "dev-feat/reka",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stacktracelabs/ui.git",
+                "reference": "4cf6810a7d4ef9605263c2503e42b7579188aba5"
+            },
             "dist": {
-                "type": "path",
-                "url": "../ui",
-                "reference": "26d2338bbabefb367052b6d18d3d5d9b2fe73e90"
+                "type": "zip",
+                "url": "https://api.github.com/repos/stacktracelabs/ui/zipball/4cf6810a7d4ef9605263c2503e42b7579188aba5",
+                "reference": "4cf6810a7d4ef9605263c2503e42b7579188aba5",
+                "shasum": ""
             },
             "require": {
                 "inertiajs/inertia-laravel": "^2.0",
@@ -3369,13 +3375,16 @@
                     "StackTrace\\Ui\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Component library for Laravel, Vue and Inertia.js based on shadcn-vue.",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/stacktracelabs/ui/issues",
+                "source": "https://github.com/stacktracelabs/ui/tree/v0.3.0"
+            },
+            "time": "2025-07-11T12:50:12+00:00"
         },
         {
             "name": "symfony/clock",

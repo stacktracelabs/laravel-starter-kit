@@ -13,7 +13,7 @@
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "stacktrace/ui": "*",
+        "stacktrace/ui": "^0.3.0",
         "tightenco/ziggy": "^2.4"
     },
     "require-dev": {
@@ -78,11 +78,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../ui"
-        }
-    ]
+    "prefer-stable": true
 }
