@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import { FormItem, FormLabel, FormMessage, FormDescription } from './'
+
+const props = withDefaults(defineProps<{
+  variant?: 'vertical' | 'horizontal'
+  for?: string
+  label?: string | null | undefined
+  help?: string | null | undefined
+  error?: string | null | undefined
+  required?: boolean
+}>(), {
+  variant: 'vertical',
+})
+</script>
+
 <template>
   <div v-if="variant === 'horizontal'" class="form-control w-full flex flex-col sm:flex-row" :class="{ 'has-error': !!error }">
     <div class="flex flex-col space-y-2 sm:w-2/5 pb-2 sm:pb-0 sm:pr-4" :class="{ 'sm:pt-2.5': !help }">
@@ -20,18 +35,3 @@
     <FormMessage v-if="error" :message="error" />
   </FormItem>
 </template>
-
-<script setup lang="ts">
-import { FormItem, FormLabel, FormMessage, FormDescription } from './'
-
-const props = withDefaults(defineProps<{
-  variant?: 'vertical' | 'horizontal'
-  for?: string
-  label?: string | null | undefined
-  help?: string | null | undefined
-  error?: string | null | undefined
-  required?: boolean
-}>(), {
-  variant: 'vertical',
-})
-</script>

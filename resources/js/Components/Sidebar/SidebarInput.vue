@@ -1,13 +1,3 @@
-<script setup lang="ts">
-import type { HTMLAttributes } from 'vue'
-import { cn } from '@/Utils'
-import { Input } from '@/Components/Input'
-
-const props = defineProps<{
-  class?: HTMLAttributes['class']
-}>()
-</script>
-
 <template>
   <Input
     data-slot="sidebar-input"
@@ -20,3 +10,13 @@ const props = defineProps<{
     <slot />
   </Input>
 </template>
+
+<script setup lang="ts">
+import type { HTMLAttributes } from 'vue'
+import { cn } from '@/Utils'
+import { Input } from '@/Components/Input'
+
+const props = defineProps<{
+  class?: HTMLAttributes['class']
+}>()
+</script>

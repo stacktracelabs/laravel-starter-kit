@@ -1,15 +1,3 @@
-<template>
-  <Label
-    :class="cn(
-      error && 'text-destructive',
-      props.class,
-    )"
-    :for="props.for"
-  >
-    <slot />
-  </Label>
-</template>
-
 <script lang="ts" setup>
 import type { HTMLAttributes } from 'vue'
 import type { LabelProps } from 'reka-ui'
@@ -21,3 +9,15 @@ const props = defineProps<LabelProps & {
   error?: string | null |undefined
 }>()
 </script>
+
+<template>
+  <Label
+    :class="cn(
+      error && 'text-destructive',
+      props.class,
+    )"
+    :for="props.for"
+  >
+    <slot />
+  </Label>
+</template>
