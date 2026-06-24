@@ -32,7 +32,7 @@ import {
 } from '@/Components/DropdownMenu';
 import type { User } from '@/Types';
 import { Link, router } from '@inertiajs/vue3';
-import { LogOut, Settings } from 'lucide-vue-next';
+import { LogOut, Settings } from '@lucide/vue';
 
 interface Props {
   user: User;

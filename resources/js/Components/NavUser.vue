@@ -27,7 +27,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@/Compon
 import { SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from '@/Components/Sidebar';
 import { type User } from '@/Types';
 import { usePage } from '@inertiajs/vue3';
-import { ChevronsUpDown } from 'lucide-vue-next';
+import { ChevronsUpDown } from '@lucide/vue';
 import UserMenuContent from './UserMenuContent.vue';
 
 const page = usePage();

@@ -39,7 +39,7 @@ import {
 } from '@/Components/Sidebar';
 import { type NavItem } from '@/Types';
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-vue-next';
+import { BookOpen, Folder, LayoutGrid } from '@lucide/vue';
 import AppLogo from './AppLogo.vue';
 
 const mainNavItems: NavItem[] = [
